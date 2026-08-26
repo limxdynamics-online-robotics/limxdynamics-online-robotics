@@ -2,7 +2,7 @@
 
 <p align="center">
   <picture>
-    <img src="https://i.imgur.com/cKq84AV.png" width="300" alt="LimX Dynamics">
+    <img src="https://i.imgur.com/riB6R1Q.png" width="300" alt="LimX Dynamics">
   </picture>
 </p>
 
