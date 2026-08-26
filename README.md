@@ -2,9 +2,7 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="doc/logo-white-theme.png">
-    <source media="(prefers-color-scheme: light)" srcset="doc/logo-black-theme.png">
-    <img src="doc/logo-black-theme.png" width="300" alt="LimX Dynamics">
+    <img src="https://i.imgur.com/cKq84AV.png" width="300" alt="LimX Dynamics">
   </picture>
 </p>
 
@@ -41,8 +39,6 @@ The parent company builds the hardware and the foundation models. What we build 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/limxdynamics/limxdynamics/main/stars-dark.svg?v=202611230858">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/limxdynamics/limxdynamics/main/stars.svg?v=202611230858">
     <img src="https://raw.githubusercontent.com/limxdynamics/limxdynamics/main/stars.svg?v=202611230858" alt="Total stars across all projects" width="720">
   </picture>
 </p>
