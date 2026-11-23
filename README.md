@@ -1,16 +1,413 @@
-## Hi there 👋
+<p align="center"><a href="https://github.com/limxdynamics"><img src="https://img.shields.io/badge/Division%20of%20LimX%20Dynamics-24292f?style=flat" alt="Division of LimX Dynamics" height="24"></a></p>
 
-<!--
-**limxdynamics-online-robotics/limxdynamics-online-robotics** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="doc/logo-white-theme.png">
+    <source media="(prefers-color-scheme: light)" srcset="doc/logo-black-theme.png">
+    <img src="doc/logo-black-theme.png" width="300" alt="LimX Dynamics">
+  </picture>
+</p>
 
-Here are some ideas to get you started:
+**Online Robotics** is the always-on division of [LimX Dynamics](https://github.com/limxdynamics). We keep robots on the air: remotely operated humanoids, telepresence rigs and embodied agents that answer for hours without a human in the loop.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+The parent company builds the hardware and the foundation models. What we build is the uptime — the control surfaces, deployment stacks and telemetry that let a robot stay present, stay responsive and stay observable while the stream is running. Everything published here is meant to be run, not read.
+
+<div align="center">
+<p align="center">
+  <a href="https://www.youtube.com/@LimXDynamics/featured"><img src="https://img.shields.io/badge/YouTube-24292f?style=flat&logo=youtube&logoColor=white&logoSize=auto" alt="YouTube" height="24"></a>&nbsp;
+  <a href="https://space.bilibili.com/1172054289"><img src="https://img.shields.io/badge/Bilibili-24292f?style=flat&logo=bilibili&logoColor=white&logoSize=auto" alt="Bilibili" height="24"></a>&nbsp;
+  <a href="https://www.douyin.com/user/MS4wLjABAAAAi4WtqIxdAP5iqbT4BSEgUWPu6g9h_Pl7VXaQOLfDeFK1LgZo5O4IbIknTVeL6Zq-?from_tab_name=main&relation=0&vid=7654443992867786011"><img src="https://img.shields.io/badge/Douyin-24292f?style=flat&logo=tiktok&logoColor=white&logoSize=auto" alt="Douyin" height="24"></a>&nbsp;
+  <a href="https://www.xiaohongshu.com/user/profile/66e44fa8000000001d020784?xsec_token=ABnTSjc077y0Y9d7LrDkVdpR_IwBO36Dm_4eHTx1mXBE0=&xsec_source=pc_note"><img src="https://img.shields.io/badge/Xiaohongshu-24292f?style=flat&logo=xiaohongshu&logoColor=white&logoSize=auto" alt="Xiaohongshu" height="24"></a>&nbsp;
+  <a href="https://www.kuaishou.com/profile/3xvskq6dkc4puq6"><img src="https://img.shields.io/badge/Kuaishou-24292f?style=flat&logo=kuaishou&logoColor=white&logoSize=auto" alt="Kuaishou" height="24"></a>&nbsp;
+  <a href="https://x.com/LimX_Dynamics"><img src="https://img.shields.io/badge/X-24292f?style=flat&logo=x&logoColor=white&logoSize=auto" alt="X" height="24"></a>&nbsp;
+  <a href="https://www.linkedin.com/company/limx-dynamics/home/"><img src="https://img.shields.io/badge/LinkedIn-24292f?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg%3D%3D" alt="LinkedIn" height="24"></a>&nbsp;
+  <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_official_en.png"><img src="https://img.shields.io/badge/WeChat-24292f?style=flat&logo=wechat&logoColor=white&logoSize=auto" alt="WeChat" height="24"></a>
+</p>
+
+<p align="center">
+  <a href="https://huggingface.co/limxdynamics"><img src="https://img.shields.io/badge/HuggingFace-24292f?style=flat&logo=huggingface&logoColor=white&logoSize=auto" alt="HuggingFace" height="24"></a>&nbsp;
+  <a href="https://modelscope.cn/organization/LimXDynamics?tab=all"><img src="https://img.shields.io/badge/ModelScope-24292f?style=flat&logo=modelscope&logoColor=white&logoSize=auto" alt="ModelScope" height="24"></a>&nbsp;
+  <a href="https://www.limxdynamics.com/"><img src="https://img.shields.io/badge/Website-24292f?style=flat&logo=googlechrome&logoColor=white&logoSize=auto" alt="Website" height="24"></a>&nbsp;
+  <a href="https://career.limxdynamics.com/"><img src="https://img.shields.io/badge/Careers-24292f?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPHJlY3QgeD0iMyIgeT0iNy41IiB3aWR0aD0iMTgiIGhlaWdodD0iMTIuNSIgcng9IjIiLz48cGF0aCBkPSJNOC41IDcuNVY2YTIgMiAwIDAgMSAyLTJoM2EyIDIgMCAwIDEgMiAydjEuNSIvPjwvc3ZnPg%3D%3D" alt="Careers" height="24"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/limxdynamics"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Fstars.json&style=flat&logo=github&logoSize=auto" alt="Stars" height="24"></a>&nbsp;
+  <a href="https://github.com/limxdynamics"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Fforks.json&style=flat&logo=github&logoSize=auto" alt="Forks" height="24"></a>&nbsp;
+  <a href="https://github.com/limxdynamics"><img src="https://badges.strrl.dev/years/limxdynamics?style=flat&logo=github&logoColor=white&logoSize=auto" alt="Years" height="24"></a>
+</p>
+</div>
+
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/limxdynamics/limxdynamics/main/stars-dark.svg?v=202611230858">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/limxdynamics/limxdynamics/main/stars.svg?v=202611230858">
+    <img src="https://raw.githubusercontent.com/limxdynamics/limxdynamics/main/stars.svg?v=202611230858" alt="Total stars across all projects" width="720">
+  </picture>
+</p>
+
+## Quick Start
+
+**[10-minute guide: run a trained policy in simulation →](https://github.com/limxdynamics/limxdynamics/blob/main/doc/quickstart.md)**
+
+Every LimX stack is the same two-process pattern — a **MuJoCo simulator** and an **RL controller** talking over the [LimX SDK](https://github.com/limxdynamics/limxsdk-lowlevel) on `127.0.0.1`. Point the controller at a robot IP instead and the same code drives real hardware.
+
+## Built with LimX
+
+**[Awesome LimX: papers, code, datasets, competition results and industry deployments built on LimX robots →](https://github.com/limxdynamics/awesome-limx)**
+
+Find work for your robot: [TRON1](https://github.com/limxdynamics/awesome-limx/blob/main/robots/TRON1.md) · [TRON2](https://github.com/limxdynamics/awesome-limx/blob/main/robots/TRON2.md) · [Oli](https://github.com/limxdynamics/awesome-limx/blob/main/robots/Oli.md) · [Luna](https://github.com/limxdynamics/awesome-limx/blob/main/robots/Luna.md) · [P1](https://github.com/limxdynamics/awesome-limx/blob/main/robots/P1.md) · [W1](https://github.com/limxdynamics/awesome-limx/blob/main/robots/W1.md)
+
+## Open Source Projects
+
+<p align="center"><a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/Join%20Our%20WeChat%20Community-All%20Projects%20Welcome-07C160?style=for-the-badge&logo=wechat&logoColor=white" alt="WeChat Community"></a></p>
+<p align="center"><sub>For partnership and procurement inquiries, contact <a href="mailto:opensource@limxdynamics.com">opensource@limxdynamics.com</a></sub></p>
+
+<table class="table table-striped table-bordered table-vcenter"/>
+    <tbody>
+    <tr><th>Platform</th><th>Type</th><th> Title </th> <th>Description</th> <th>Stars</th> </tr>
+    <!-- Empty rows keep rowspan category cells on the default white stripe. -->
+    <tr></tr>
+    <tr>
+        <td rowspan="3" class="font-weight-bold">Ecosystem</td>
+        <td align="center" >Homepage</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/limxdynamics"> limxdynamics </a></td>
+        <td> The LimX Dynamics open-source home: every official project in one place, a 10-minute quick start and auto-updating star and fork charts. </td>
+        <td><a href="https://github.com/limxdynamics/limxdynamics"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__limxdynamics.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Awesome list</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/awesome-limx"> awesome-limx </a></td>
+        <td> A curated list of public work built on LimX robots and the LimX SDK: papers, open-source code, datasets, competition results and industry deployments, with one page per robot. </td>
+        <td><a href="https://github.com/limxdynamics/awesome-limx"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__awesome-limx.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Report</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/embodied-ai-insights"> embodied-ai-insights </a></td>
+        <td> Monthly reports on the embodied AI open-source ecosystem, built from public GitHub data — tracking star growth, new repositories and community activity across leading robotics companies. </td>
+        <td><a href="https://github.com/limxdynamics/embodied-ai-insights"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__embodied-ai-insights.json"/></a></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td rowspan="14" class="font-weight-bold">TRON2</td>
+        <td align="center" >Description</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2-robot-description"> tron2-robot-description </a></td>
+        <td> Robot model files for TRON2 variants, including URDF/xacro, MuJoCo XML, meshes, and optional USD assets for simulation, visualization, and downstream tooling. </td>
+        <td><a href="https://github.com/limxdynamics/tron2-robot-description"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2-robot-description.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Simulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_gazebo_ros"> tron2_gazebo_ros </a></td>
+        <td> A ROS Noetic and Gazebo simulation workspace for TRON2 robots that supports controller integration, Sim-to-Real validation, and deployment workflows. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_gazebo_ros"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_gazebo_ros.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Simulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_mujoco_sim"> tron2_mujoco_sim </a></td>
+        <td> A <a href="https://mujoco.org"> MuJoCo </a> simulation tool for TRON2 robots that supports SF, WF, DA, DACH and DASF robot types across TRON2A and TRON2B, and controller deployment through the LimX SDK. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_mujoco_sim"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_mujoco_sim.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Training</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_rl_lab"> tron2_rl_lab </a></td>
+        <td> An <a href="https://isaac-sim.github.io/IsaacLab/"> Isaac Lab </a> reinforcement learning training stack for TRON2A robots, supporting SF, WF and DASF (sole-foot, wheel-foot and top-bottom combined humanoid) variants. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_rl_lab"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_rl_lab.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Training</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/TRON2_YG_LAB"> TRON2_YG_LAB </a></td>
+        <td> An Isaac Lab reinforcement learning training stack for TRON2 robots with 6-DoF arm and gripper variants, designed for locomotion policy training and play. </td>
+        <td><a href="https://github.com/limxdynamics/TRON2_YG_LAB"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__TRON2_YG_LAB.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_rl_deploy_python"> tron2_rl_deploy_python </a></td>
+        <td> A Python-based reinforcement learning deployment demo for TRON2 robots that runs ONNX policies and supports MuJoCo simulation and real-world deployment. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_rl_deploy_python"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_rl_deploy_python.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_rl_deploy_ros"> tron2_rl_deploy_ros </a></td>
+        <td> A ROS Noetic reinforcement learning deployment workspace for TRON2 robots, including hardware, controller, and ONNX runtime packages for simulation and real robots. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_rl_deploy_ros"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_rl_deploy_ros.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_env"> tron2_env </a></td>
+        <td> A public TRON2 runtime package for OpenPI deployment, providing WebSocket robot communication, motion execution, observation collection, and RTC helper utilities for real-robot manipulation. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_env"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_env.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_openpi"> tron2_openpi </a></td>
+        <td> A TRON2 deployment-focused derivative of OpenPI that adds TRON2 policy transforms, deployment configuration templates, pi0/pi0.5 policy serving, and real-robot client examples. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_openpi"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_openpi.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Manipulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_manipulation_controller"> tron2_manipulation_controller </a></td>
+        <td> A local simulation and SDK validation workspace for the TRON2 dual-arm robot, pairing a <a href="https://mujoco.org"> MuJoCo </a> motor-level simulator with the controller runtime and WebSocket SDK, and including VLA trajectory replay and limit checking. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_manipulation_controller"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_manipulation_controller.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Manipulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2_visual_grasp"> tron2_visual_grasp </a></td>
+        <td> A vision-guided mobile grasping demo for TRON2 robots that finds a tennis ball with pure OpenCV, drives up, kneels and grasps it with a wrist RealSense D405 — running entirely on CPU with no GPU or neural network. </td>
+        <td><a href="https://github.com/limxdynamics/tron2_visual_grasp"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2_visual_grasp.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Navigation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2-navigation-ros2"> tron2-navigation-ros2 </a></td>
+        <td> ROS 2 Humble navigation integration for TRON2, including the production SCAN-Planner subset, RoboSense LiDAR drivers, and safety/deployment tooling; GPL components live in companion repos. </td>
+        <td><a href="https://github.com/limxdynamics/tron2-navigation-ros2"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2-navigation-ros2.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Navigation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2-navigation-pct-gpl"> tron2-navigation-pct-gpl </a></td>
+        <td> GPL-2.0-or-later PCT planner sources for tron2-navigation-ros2. </td>
+        <td><a href="https://github.com/limxdynamics/tron2-navigation-pct-gpl"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2-navigation-pct-gpl.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Navigation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron2-navigation-fastlio-gpl"> tron2-navigation-fastlio-gpl </a></td>
+        <td> GPL-2.0-only FAST-LIO ROS 2 sources for tron2-navigation-ros2. </td>
+        <td><a href="https://github.com/limxdynamics/tron2-navigation-fastlio-gpl"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron2-navigation-fastlio-gpl.json"/></a></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td rowspan="7" class="font-weight-bold">Oli</td>
+        <td align="center" >Description</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/humanoid-description"> humanoid-description </a></td>
+        <td> Robot model files, including URDF, USD, and XML model files. Can be used for simulation, training, etc. </td>
+        <td><a href="https://github.com/limxdynamics/humanoid-description"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__humanoid-description.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Simulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/humanoid-mujoco-sim"> humanoid-mujoco-sim </a></td>
+        <td> A <a href="https://mujoco.org"> MuJoCo </a> simulation tool for the Oli robot that supports quick Sim-to-Real validation and deployment of robot algorithms. </td>
+        <td><a href="https://github.com/limxdynamics/humanoid-mujoco-sim"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__humanoid-mujoco-sim.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Training</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/humanoid-rl-isaaclab"> humanoid-rl-isaaclab </a></td>
+        <td> A reinforcement learning training framework designed specifically for Oli humanoid robots, built on <a href="https://isaac-sim.github.io/IsaacLab/"> Isaac Lab </a>, providing comprehensive tools for simulation and training, and supporting sim-to-real locomotion. </td>
+        <td><a href="https://github.com/limxdynamics/humanoid-rl-isaaclab"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__humanoid-rl-isaaclab.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/humanoid-rl-deploy-python"> humanoid-rl-deploy-python </a></td>
+        <td> A Python-based reinforcement learning deployment algorithm that streamlines the process of deploying trained models on Oli robots. </td>
+        <td><a href="https://github.com/limxdynamics/humanoid-rl-deploy-python"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__humanoid-rl-deploy-python.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/humanoid-rl-deploy-cpp"> humanoid-rl-deploy-cpp </a></td>
+        <td> A lightweight C++ algorithm framework that enables rapid deployment of trained models when ROS1/ROS2 is not required. </td>
+        <td><a href="https://github.com/limxdynamics/humanoid-rl-deploy-cpp"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__humanoid-rl-deploy-cpp.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/humanoid-rl-deploy-ros2"> humanoid-rl-deploy-ros2 </a></td>
+        <td> A reinforcement learning deployment framework based on <a href="https://www.ros.org">ROS2</a> that enables rapid deployment of trained models on Oli robots. </td>
+        <td><a href="https://github.com/limxdynamics/humanoid-rl-deploy-ros2"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__humanoid-rl-deploy-ros2.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/humanoid-rl-deploy-ros"> humanoid-rl-deploy-ros </a></td>
+        <td> A reinforcement learning deployment framework based on <a href="https://www.ros.org">ROS1</a> that enables rapid deployment of trained models on Oli robots. </td>
+        <td><a href="https://github.com/limxdynamics/humanoid-rl-deploy-ros"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__humanoid-rl-deploy-ros.json"/></a></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td rowspan="3" class="font-weight-bold">Luna</td>
+        <td align="center" >Description</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/luna-description"> luna-description </a></td>
+        <td> Robot model files for the LimX Luna humanoid — URDF, MuJoCo MJCF, and two NVIDIA USD variants (serial and closed-loop) for simulation, visualization, and downstream tooling. </td>
+        <td><a href="https://github.com/limxdynamics/luna-description"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__luna-description.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Algorithm</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/luna-beyondmimic"> luna-beyondmimic </a></td>
+        <td> A BeyondMimic-based whole-body motion learning framework that teaches the LimX Luna humanoid to dance — from human dance motions to deployable policies on Isaac Lab. </td>
+        <td><a href="https://github.com/limxdynamics/luna-beyondmimic"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__luna-beyondmimic.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Algorithm</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/GMR"> GMR </a></td>
+        <td> LimX Dynamics fork of GMR (General Motion Retargeting) — retarget human motion (SMPL-X/BVH/Xsens/OptiTrack) into LimX humanoids (OLI EDU, Luna) and 17+ other robots in real time on CPU. </td>
+        <td><a href="https://github.com/limxdynamics/GMR"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__GMR.json"/></a></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td rowspan="12" class="font-weight-bold">TRON1</td>
+        <td align="center" >Description</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-robot-description"> tron1-robot-description </a></td>
+        <td> Robot model files for TRON1 variants, including URDF/xacro, MuJoCo XML, and meshes for point-foot and wheel-legged robots. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-robot-description"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-robot-description.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Simulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-gazebo-ros"> tron1-gazebo-ros </a></td>
+        <td> A <a href="https://www.ros.org"> ROS1-based </a> simulation tool for the TRON1 robot that supports quick Sim-to-Real validation and deployment of robot algorithms. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-gazebo-ros"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-gazebo-ros.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Simulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-gazebo-ros2"> tron1-gazebo-ros2 </a></td>
+        <td> A <a href="https://www.ros.org"> ROS2-based </a> simulation tool for the TRON1 robot that supports quick Sim-to-Real validation and deployment of robot algorithms. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-gazebo-ros2"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-gazebo-ros2.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Simulation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-mujoco-sim"> tron1-mujoco-sim </a></td>
+        <td> A <a href="https://mujoco.org"> MuJoCo </a> simulation tool for the TRON1 robot that supports quick Sim-to-Real validation and deployment of robot algorithms. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-mujoco-sim"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-mujoco-sim.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Training</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-rl-isaaclab"> tron1-rl-isaaclab </a></td>
+        <td> A reinforcement learning training framework designed specifically for TRON1 robots, 
+        built on <a href="https://isaac-sim.github.io/IsaacLab/"> Isaac Lab </a>, providing comprehensive tools for simulation and training, and supporting reinforcement learning in various environments. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-rl-isaaclab"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-rl-isaaclab.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Training</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-rl-isaacgym"> tron1-rl-isaacgym </a></td>
+        <td> A reinforcement learning training framework designed specifically for TRON1 robots, 
+        built on <a href="https://developer.nvidia.com/isaac-gym"> Isaac Gym </a>, providing comprehensive tools for simulation and training, and supporting reinforcement learning in various environments. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-rl-isaacgym"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-rl-isaacgym.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-rl-deploy-ros"> tron1-rl-deploy-ros </a></td>
+        <td> A reinforcement learning deployment framework based on <a href="https://www.ros.org"> ROS1 </a> that helps you quickly deploy your trained models. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-rl-deploy-ros"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-rl-deploy-ros.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-rl-deploy-ros2"> tron1-rl-deploy-ros2 </a></td>
+        <td> A reinforcement learning deployment framework based on <a href="https://www.ros.org"> ROS2 </a> that helps you quickly deploy your trained models. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-rl-deploy-ros2"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-rl-deploy-ros2.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-rl-deploy-python"> tron1-rl-deploy-python </a></td>
+        <td> A reinforcement learning deployment algorithm that leverages Python to streamline the deployment of your trained models. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-rl-deploy-python"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-rl-deploy-python.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Deployment</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-rl-deploy-arm"> tron1-rl-deploy-arm </a></td>
+        <td> A reinforcement learning deployment framework for TRON1 arm controllers based on ONNX runtime. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-rl-deploy-arm"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-rl-deploy-arm.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Navigation</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-ss"> tron1-ss </a></td>
+        <td> A ROS Noetic-based SLAM and autonomous navigation stack for TRON1 robots, supporting LiDAR mapping, localization, and path planning. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-ss"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-ss.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Agent</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/tron1-agent"> tron1-agent </a></td>
+        <td> Real-time voice interaction agent for Tron robots with LLM-powered dialogue, speech recognition (FunASR), TTS, tool calling, and task management. </td>
+        <td><a href="https://github.com/limxdynamics/tron1-agent"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__tron1-agent.json"/></a></td>
+    </tr>
+    <tr>
+        <td rowspan="5" class="font-weight-bold">VLA</td>
+        <td align="center" >Data</td>
+        <td align="center" ><a href="https://github.com/FluxVLA/FluxMimir"> FluxMimir </a></td>
+        <td> Offline data pipeline that turns raw robot recordings into versioned canonical datasets — format conversion, ego-to-robot visual synthesis and automated annotation. </td>
+        <td><a href="https://github.com/FluxVLA/FluxMimir"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2FFluxVLA__FluxMimir.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Algorithm</td>
+        <td align="center" ><a href="https://github.com/FluxVLA/FluxVLA"> FluxVLA </a></td>
+        <td> All-in-one VLA engineering platform for embodied intelligence — from data collection to real-robot deployment. </td>
+        <td><a href="https://github.com/FluxVLA/FluxVLA"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2FFluxVLA__FluxVLA.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Algorithm</td>
+        <td align="center" ><a href="https://github.com/FluxVLA/FluxDAgger"> FluxDAgger </a></td>
+        <td> A model-decoupled DAgger pipeline for dual-arm robotic manipulation — human-in-the-loop data collection compatible with arbitrary VLA and reward models. </td>
+        <td><a href="https://github.com/FluxVLA/FluxDAgger"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2FFluxVLA__FluxDAgger.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Simulation</td>
+        <td align="center" ><a href="https://github.com/FluxVLA/FluxBisim"> FluxBisim </a></td>
+        <td> IsaacSim-based bimanual manipulation simulation for FluxVLA. </td>
+        <td><a href="https://github.com/FluxVLA/FluxBisim"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2FFluxVLA__FluxBisim.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Evaluation</td>
+        <td align="center" ><a href="https://github.com/FluxVLA/FluxThemis"> FluxThemis </a></td>
+        <td> A benchmarking framework that evaluates VLA policies in simulation and on real robots through the same versioned model interface, with resumable episode scheduling. </td>
+        <td><a href="https://github.com/FluxVLA/FluxThemis"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2FFluxVLA__FluxThemis.json"/></a></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td rowspan="7" class="font-weight-bold">SDK & Tools</td>
+        <td align="center" >SDK</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/limxsdk-lowlevel"> limxsdk-lowlevel </a></td>
+        <td> Low-level SDK for direct robot communication (motors, sensors, real-time control), used by the simulation and deployment repos above. </td>
+        <td><a href="https://github.com/limxdynamics/limxsdk-lowlevel"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__limxsdk-lowlevel.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Visualization</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/robot-visualization"> robot-visualization </a></td>
+        <td> Real-time visualization tool for robot joint states, IMU, force sensors, and motion trajectories via RViz/PlotJuggler. </td>
+        <td><a href="https://github.com/limxdynamics/robot-visualization"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__robot-visualization.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Bridge</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/ros1-bridger"> ros1-bridger </a></td>
+        <td> ROS1 communication bridge (x86_64 & aarch64, Noetic) for connecting development machines to LimX robot networks. </td>
+        <td><a href="https://github.com/limxdynamics/ros1-bridger"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__ros1-bridger.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Bridge</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/ros2-bridger"> ros2-bridger </a></td>
+        <td> ROS2 communication bridge (x86_64 & aarch64, Foxy/Humble/Jazzy/Lyrical) for connecting development machines to LimX robot networks. </td>
+        <td><a href="https://github.com/limxdynamics/ros2-bridger"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__ros2-bridger.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Tool</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/robot-joystick"> robot-joystick </a></td>
+        <td> Cross-platform virtual joystick for simulation and real-robot manual control. </td>
+        <td><a href="https://github.com/limxdynamics/robot-joystick"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__robot-joystick.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >CLI</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/limx-cli"> limx-cli </a></td>
+        <td> CLI tool and Scratch visual programming bridge for LimX robots, with JSON output for AI Agent integration. </td>
+        <td><a href="https://github.com/limxdynamics/limx-cli"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__limx-cli.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >CLI</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/gradmotion-cli"> gradmotion-cli </a></td>
+        <td> CLI tool for GradMotion whole-body motion generation on LimX robots with AI Agent integration support. </td>
+        <td><a href="https://github.com/limxdynamics/gradmotion-cli"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__gradmotion-cli.json"/></a></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td rowspan="3" class="font-weight-bold">TronCamp</td>
+        <td align="center" >Event</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/troncamp-mani"> troncamp-mani </a></td>
+        <td> TronCamp ACT 4-task contestant kit — self-contained package (Tron2 dual-arm / RoboTwin / single-GPU ACT) with setup, starter, and eval for four increasingly difficult manipulation tasks. </td>
+        <td><a href="https://github.com/limxdynamics/troncamp-mani"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__troncamp-mani.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Web</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/troncamp-web-mani"> troncamp-web-mani </a></td>
+        <td> TronCamp hackathon public site with task briefs, T1-T4 freedom ladder, in-process evaluation, and token-anonymous leaderboard. </td>
+        <td><a href="https://github.com/limxdynamics/troncamp-web-mani"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__troncamp-web-mani.json"/></a></td>
+    </tr>
+    <tr>
+        <td align="center" >Web</td>
+        <td align="center" ><a href="https://github.com/limxdynamics/troncamp-web-locomotion"> troncamp-web-locomotion </a></td>
+        <td> TronCamp locomotion track web companion for the TRON2 robot. </td>
+        <td><a href="https://github.com/limxdynamics/troncamp-web-locomotion"><img alt="Stars" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flimxdynamics%2Flimxdynamics%2Fmain%2Fbadges%2Frepos%2Flimxdynamics__troncamp-web-locomotion.json"/></a></td>
+    </tr>
+    </tbody>
+</table>
